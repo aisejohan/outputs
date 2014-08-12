@@ -1,0 +1,249 @@
+/* Comments begin... 
+Coefficient of   x^13 * y^1               = -1
+Coefficient of   x^6 * y^2 * z^4         = -1
+Coefficient of   x^4 * y^5 * z^3         = 0
+Coefficient of   x^2 * y^8 * z^2         = 1
+Coefficient of   x^1 * z^9               = 1
+Coefficient of   y^11 * z^1               = 1
+
+Here is the polynomial we're using this time:
+
+-1*x^13*y^1 + -1*x^6*y^2*z^4 + 1*x^2*y^8*z^2 + 1*x^1*z^9 + 1*y^11*z^1
+
+Allocate G_len 20 elements and old = 0.
+Allocate M_len = 400 elements.
+Allocate G_len 40 elements and old = 20.
+Allocate M_len = 800 elements.
+Allocate G_len 80 elements and old = 40.
+Allocate M_len = 1600 elements.
+Allocate M_len = 3200 elements.
+Allocate G_len 160 elements and old = 80.
+Not smooth!
+Coefficient of   x^13 * y^1               = 0
+Coefficient of   x^6 * y^2 * z^4         = -1
+Coefficient of   x^4 * y^5 * z^3         = 1
+Coefficient of   x^2 * y^8 * z^2         = -1
+Coefficient of   x^1 * z^9               = 1
+Coefficient of   y^11 * z^1               = 1
+
+Here is the polynomial we're using this time:
+
+-1*x^6*y^2*z^4 + 1*x^4*y^5*z^3 + -1*x^2*y^8*z^2 + 1*x^1*z^9 + 1*y^11*z^1
+
+Not smooth!
+Coefficient of   x^13 * y^1               = -1
+Coefficient of   x^6 * y^2 * z^4         = -1
+Coefficient of   x^4 * y^5 * z^3         = 1
+Coefficient of   x^2 * y^8 * z^2         = -1
+Coefficient of   x^1 * z^9               = -1
+Coefficient of   y^11 * z^1               = 0
+
+Here is the polynomial we're using this time:
+
+-1*x^13*y^1 + -1*x^6*y^2*z^4 + 1*x^4*y^5*z^3 + -1*x^2*y^8*z^2 + -1*x^1*z^9
+
+Not smooth!
+Coefficient of   x^13 * y^1               = 1
+Coefficient of   x^6 * y^2 * z^4         = -1
+Coefficient of   x^4 * y^5 * z^3         = -1
+Coefficient of   x^2 * y^8 * z^2         = -1
+Coefficient of   x^1 * z^9               = 0
+Coefficient of   y^11 * z^1               = 1
+
+Here is the polynomial we're using this time:
+
+1*x^13*y^1 + -1*x^6*y^2*z^4 + -1*x^4*y^5*z^3 + -1*x^2*y^8*z^2 + 1*y^11*z^1
+
+Not smooth!
+Coefficient of   x^13 * y^1               = 1
+Coefficient of   x^6 * y^2 * z^4         = 1
+Coefficient of   x^4 * y^5 * z^3         = 1
+Coefficient of   x^2 * y^8 * z^2         = 0
+Coefficient of   x^1 * z^9               = 0
+Coefficient of   y^11 * z^1               = -1
+
+Here is the polynomial we're using this time:
+
+1*x^13*y^1 + 1*x^6*y^2*z^4 + 1*x^4*y^5*z^3 + -1*y^11*z^1
+
+Not smooth!
+Coefficient of   x^13 * y^1               = 1
+Coefficient of   x^6 * y^2 * z^4         = 0
+Coefficient of   x^4 * y^5 * z^3         = -1
+Coefficient of   x^2 * y^8 * z^2         = 1
+Coefficient of   x^1 * z^9               = 1
+Coefficient of   y^11 * z^1               = 1
+
+Here is the polynomial we're using this time:
+
+1*x^13*y^1 + -1*x^4*y^5*z^3 + 1*x^2*y^8*z^2 + 1*x^1*z^9 + 1*y^11*z^1
+
+Allocate M_len = 6400 elements.
+Not smooth!
+Coefficient of   x^13 * y^1               = 1
+Coefficient of   x^6 * y^2 * z^4         = 1
+Coefficient of   x^4 * y^5 * z^3         = 1
+Coefficient of   x^2 * y^8 * z^2         = -1
+Coefficient of   x^1 * z^9               = -1
+Coefficient of   y^11 * z^1               = 0
+
+Here is the polynomial we're using this time:
+
+1*x^13*y^1 + 1*x^6*y^2*z^4 + 1*x^4*y^5*z^3 + -1*x^2*y^8*z^2 + -1*x^1*z^9
+
+Not smooth!
+Coefficient of   x^13 * y^1               = 1
+Coefficient of   x^6 * y^2 * z^4         = 1
+Coefficient of   x^4 * y^5 * z^3         = 0
+Coefficient of   x^2 * y^8 * z^2         = -1
+Coefficient of   x^1 * z^9               = 0
+Coefficient of   y^11 * z^1               = 0
+
+Here is the polynomial we're using this time:
+
+1*x^13*y^1 + 1*x^6*y^2*z^4 + -1*x^2*y^8*z^2
+
+Not smooth!
+Coefficient of   x^13 * y^1               = 0
+Coefficient of   x^6 * y^2 * z^4         = -1
+Coefficient of   x^4 * y^5 * z^3         = 0
+Coefficient of   x^2 * y^8 * z^2         = 0
+Coefficient of   x^1 * z^9               = -1
+Coefficient of   y^11 * z^1               = 1
+
+Here is the polynomial we're using this time:
+
+-1*x^6*y^2*z^4 + -1*x^1*z^9 + 1*y^11*z^1
+
+Not smooth!
+Coefficient of   x^13 * y^1               = -1
+Coefficient of   x^6 * y^2 * z^4         = 1
+Coefficient of   x^4 * y^5 * z^3         = 0
+Coefficient of   x^2 * y^8 * z^2         = 1
+Coefficient of   x^1 * z^9               = 1
+Coefficient of   y^11 * z^1               = 1
+
+Here is the polynomial we're using this time:
+
+-1*x^13*y^1 + 1*x^6*y^2*z^4 + 1*x^2*y^8*z^2 + 1*x^1*z^9 + 1*y^11*z^1
+
+The final length of G is 75
+[6, 2, 3, 0]  	165	4 
+[13, 0, 0, 0]  	169	4  <--- 1
+[12, 1, 0, 0]  	171	4 
+[2, 8, 2, 0]  	184	3 
+[8, 8, 1, 0]  	243	6 
+[5, 0, 10, 0]  	255	5 
+[7, 0, 9, 0]  	262	5 
+[5, 3, 9, 0]  	281	6 
+[6, 13, 1, 0]  	292	5 
+[5, 14, 1, 0]  	294	5 
+[3, 6, 9, 0]  	300	5 
+[4, 16, 1, 0]  	311	5 
+[3, 17, 1, 0]  	313	4 
+[8, 14, 0, 0]  	314	5 
+[6, 16, 0, 0]  	318	5 
+[5, 17, 0, 0]  	320	4 
+[11, 12, 0, 0]  	323	5 
+[10, 13, 0, 0]  	325	5 
+[2, 20, 0, 0]  	326	4 
+[2, 19, 1, 0]  	330	3 
+[2, 0, 16, 0]  	330	4 
+[1, 20, 1, 0]  	332	3 
+[4, 19, 0, 0]  	337	4 
+[4, 0, 15, 0]  	337	4 
+[3, 1, 15, 0]  	339	3 
+[1, 22, 0, 0]  	343	3 
+[4, 3, 13, 0]  	344	4 
+[1, 12, 8, 0]  	345	3 
+[3, 4, 13, 0]  	346	3 
+[3, 3, 14, 0]  	350	3 
+[2, 4, 14, 0]  	352	3 
+[1, 9, 11, 0]  	357	3 
+[1, 4, 15, 0]  	358	2 
+[1, 8, 12, 0]  	361	3 
+[2, 6, 13, 0]  	363	3 
+[1, 7, 13, 0]  	365	2 
+[1, 6, 14, 0]  	369	2 
+[1, 15, 7, 0]  	371	2 
+[1, 19, 4, 0]  	374	3 
+[0, 20, 4, 0]  	376	2 
+[1, 18, 5, 0]  	378	2 
+[0, 19, 5, 0]  	380	2 
+[1, 17, 6, 0]  	382	2 
+[0, 18, 6, 0]  	384	1 
+[0, 26, 0, 0]  	390	2  <--- 2
+[1, 0, 20, 0]  	393	2 
+[0, 1, 20, 0]  	395	1 
+[0, 10, 13, 0]  	397	1 
+[0, 0, 21, 0]  	399	1  <--- 3
+[0, 12, 12, 0]  	408	1 
+[0, 4, 19, 0]  	421	1 
+[0, 15, 11, 0]  	434	1 
+[0, 7, 18, 0]  	447	1 
+[4, 5, 9, 1]  	298	5 
+[5, 6, 8, 1]  	307	5 
+[4, 4, 11, 1]  	321	4 
+[3, 19, 0, 1]  	324	4 
+[4, 1, 14, 1]  	333	4 
+[2, 3, 15, 1]  	356	3 
+[2, 7, 12, 1]  	359	3 
+[1, 1, 19, 1]  	389	2 
+[11, 0, 8, 2]  	295	6 
+[3, 5, 12, 2]  	342	4 
+[0, 23, 3, 2]  	402	2 
+[10, 11, 0, 48]  	295	4 
+[1, 8, 11, 48]  	342	3 
+[0, 4, 18, 48]  	402	1 
+[3, 16, 1, 49]  	298	4 
+[4, 17, 0, 49]  	307	4 
+[1, 19, 1, 49]  	317	2 
+[1, 18, 2, 49]  	321	2 
+[3, 0, 15, 49]  	324	3 
+[2, 4, 13, 49]  	333	3 
+[1, 14, 7, 49]  	356	2 
+[0, 12, 11, 49]  	389	1 
+------
+The gap is between 3 and 47.
+Lengths: 2 2 3 3 2 2.
+For 413 = 5*d/2-d1-d2-d3 you get 2 in char 0.
+1*y^25*z^2
+1*y^6*z^17
+
+For 229 = 3*d/2-d1-d2-d3 you get 3 in char 0.
+1*x^3*z^10
+1*x^1*y^3*z^9
+1*y^14*z^1
+
+For 45 = d/2-d1-d2-d3 you get 2 in char 0.
+1*x^2*z^1
+1*y^3
+
+Extra powers of p used 0.
+The invariant extra is equal to 5.
+Start computing 3^3 Delta^1 (x1x2x3)^2... Done.
+Start computing 3^4 Delta^2 (x1x2x3)^2... Done.
+Start computing 3^5 Delta^3 (x1x2x3)^2... Done.
+Start computing 3^6 Delta^4 (x1x2x3)^2... Done.
+Start computing 3^7 Delta^5 (x1x2x3)^2... Done.
+Start computing 3^8 Delta^6 (x1x2x3)^2... Done.
+Start computing 3^9 Delta^7 (x1x2x3)^2... Done.
+Start computing 3^10 Delta^8 (x1x2x3)^2... Done.
+Start computing 3^11 Delta^9 (x1x2x3)^2... Done.
+Start computing 3^12 Delta^10 (x1x2x3)^2... Done.
+Start computing aa.
+1 2 3 4 5 6 7 
+*/
+A = \
+[7060665498305436206829,5989829620554879497079,2575485867140819733861,1838963001248982950688,2175078574518889161168,1583541230945669635176,232156501690772191995;\
+5089329992586449812737,444238346515800577830,1634068887357425042016,5790744329548030919739,7723204176830376412431,3627098390371384480293,2561763464815024262565;\
+537543912622437182639,3352680787920282012666,224559543820985368983,8658284258598663267522,208207391271887627100,6722852632714630200942,5759605029022161105555;\
+4103885254605926022524,526475197455866192776,4851033182800791046839,6648043079260720173879,4591345369522769451468,7361384000161621726764,2382386806681184565423;\
+6283328715773686293112,2842115951172556887437,1269576505592213200722,6639596118841828565925,1602610227568387868265,2800006254159639887601,2948189934938411013129;\
+321181390964487012060,1835095647971874248808,731092147960124975832,927550794656499227073,2039794945908225119505,1705904141760791411580,87436470670019852139;\
+6652960007410277245086,4374885570192714412008,241015043395843260417,151213225765701305043,5153299710906756779901,2893686341116555098333,3119355989327080006038]
+/* 
+This matrix times 3^(-1) should be the matrix of frobenius.
+*/ 
+B = 3^(-1) * A; 
+/* Freed 18 lists. */

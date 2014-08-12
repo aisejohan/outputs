@@ -1,0 +1,81 @@
+/* Comments begin... 
+
+Please input coefficients below.
+Coefficient of   x^8                     = Coefficient of   x^5 * y^1 * z^1         = Coefficient of   x^4 * y^3               = Coefficient of   x^3 * z^3               = Coefficient of   x^2 * y^2 * z^2         = Coefficient of   x^1 * y^4 * z^1         = Coefficient of   y^6                     = Coefficient of   y^1 * z^4               = 
+Here is the polynomial we're using this time:
+
+1*x^8 + 2*x^4*y^3 + 2*y^6 + 1*y^1*z^4
+
+Allocate G_len 20 elements and old = 0.
+Allocate M_len = 400 elements.
+The final length of G is 10
+[0, 1, 3, 0]  	19	1 
+[7, 0, 0, 0]  	21	2  <--- 1
+[4, 3, 0, 0]  	24	2 
+[4, 0, 4, 0]  	32	2 
+[3, 6, 0, 0]  	33	1 
+[0, 0, 7, 0]  	35	1  <--- 3
+[0, 9, 0, 0]  	36	1  <--- 2
+[4, 2, 0, 1]  	20	3 
+[3, 5, 0, 1]  	29	2 
+[0, 0, 4, 99]  	20	1 
+------
+The gap is between 2 and 98.
+Lengths: 1 1 5 5 1 1.
+For 48 = 5*d/2-d1-d2-d3 you get 1 in char 0.
+1*x^2*y^8*z^2
+
+For 24 = 3*d/2-d1-d2-d3 you get 5 in char 0.
+1*x^5*y^1*z^1
+1*x^3*z^3
+1*x^2*y^2*z^2
+1*x^1*y^4*z^1
+1*y^6
+
+For 0 = d/2-d1-d2-d3 you get 1 in char 0.
+1
+
+Extra powers of p used 0.
+The invariant extra is equal to 10.
+Start computing 3^3 Delta^1 (x1x2x3)^2... Done.
+Start computing 3^4 Delta^2 (x1x2x3)^2... Done.
+Start computing 3^5 Delta^3 (x1x2x3)^2... Done.
+Start computing 3^6 Delta^4 (x1x2x3)^2... Done.
+Start computing 3^7 Delta^5 (x1x2x3)^2... Done.
+Start computing 3^8 Delta^6 (x1x2x3)^2... Done.
+Start computing 3^9 Delta^7 (x1x2x3)^2... Done.
+Start computing 3^10 Delta^8 (x1x2x3)^2... Done.
+Start computing 3^11 Delta^9 (x1x2x3)^2... Done.
+Start computing 3^12 Delta^10 (x1x2x3)^2... Done.
+Start computing 3^13 Delta^11 (x1x2x3)^2... Done.
+Start computing 3^14 Delta^12 (x1x2x3)^2... Done.
+Start computing 3^15 Delta^13 (x1x2x3)^2... Done.
+Start computing 3^16 Delta^14 (x1x2x3)^2... Done.
+Start computing 3^17 Delta^15 (x1x2x3)^2... Done.
+Start computing 3^18 Delta^16 (x1x2x3)^2... Done.
+Start computing 3^19 Delta^17 (x1x2x3)^2... Done.
+Start computing 3^20 Delta^18 (x1x2x3)^2... Done.
+Start computing 3^21 Delta^19 (x1x2x3)^2... Done.
+Start computing 3^22 Delta^20 (x1x2x3)^2... Done.
+Start computing aa.
+1 2 3 4 5 6 7 
+*/
+A = \
+[0,0,0,0,0,7071176589746412179634273047055205860524217,18319761025136275723733700188087688429427377;\
+0,4886938021775876691091941414043048576768938,0,0,8261523562073011989521725428845704424687871,0,0;\
+0,0,5746524239026180970068230352378826232128181,0,0,0,0;\
+0,0,0,0,0,2498295504351720780951882125344252697203335,6230901414267421271738211807372676401828882;\
+0,8487042564826799915952672956893953059327124,0,0,1468875301988315029269783660971500782984804,0,0;\
+13118334076696231454545900921265547749605247,0,0,18477892568635570714163922181177262829593505,0,0,0;\
+10544456982638169838334010725651122322128486,0,0,11453642156124430767169737034138556350483170,0,0,0]
+/* 
+This matrix times 3^(-1) should be the matrix of frobenius.
+*/ 
+B = 3^(-1) * A; 
+/* Freed 17 lists. */
+The sign is: 1
+The characteristic polynomial is: x^7 - 3*x^6 - 3*x^5 + 9*x^4 - 27*x^3 + 81*x^2 + 729*x - 2187
+Its Newton polygon is: [3/2, 3/2, 1, 1, 1, 1/2, 1/2]
+Its factorization is: [x - 3, 1; x^2 + 9, 1; x^4 - 12*x^2 + 81, 1]
+The valuation of f-g is: 20
+The valuation of subst(g,x,A) is: 21

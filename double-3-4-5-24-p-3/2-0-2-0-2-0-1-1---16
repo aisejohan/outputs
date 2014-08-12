@@ -1,0 +1,91 @@
+/* Comments begin... 
+
+Please input coefficients below.
+Coefficient of   x^8                     = Coefficient of   x^5 * y^1 * z^1         = Coefficient of   x^4 * y^3               = Coefficient of   x^3 * z^3               = Coefficient of   x^2 * y^2 * z^2         = Coefficient of   x^1 * y^4 * z^1         = Coefficient of   y^6                     = Coefficient of   y^1 * z^4               = 
+Here is the polynomial we're using this time:
+
+2*x^8 + 2*x^4*y^3 + 2*x^2*y^2*z^2 + 1*y^6 + 1*y^1*z^4
+
+Allocate G_len 20 elements and old = 0.
+Allocate M_len = 400 elements.
+Allocate G_len 40 elements and old = 20.
+The final length of G is 19
+[2, 2, 1, 0]  	19	2 
+[7, 0, 0, 0]  	21	3  <--- 1
+[4, 3, 0, 0]  	24	3 
+[2, 1, 3, 0]  	25	3 
+[5, 1, 2, 0]  	29	4 
+[0, 6, 1, 0]  	29	2 
+[3, 6, 0, 0]  	33	3 
+[3, 0, 5, 0]  	34	2 
+[5, 0, 4, 0]  	35	3 
+[0, 5, 3, 0]  	35	2 
+[2, 0, 6, 0]  	36	3 
+[1, 0, 7, 0]  	38	1 
+[1, 9, 0, 0]  	39	2 
+[0, 10, 0, 0]  	40	2  <--- 2
+[0, 4, 5, 0]  	41	1 
+[0, 0, 9, 0]  	45	1  <--- 3
+[0, 3, 7, 0]  	47	1 
+[4, 2, 0, 1]  	20	4 
+[2, 1, 2, 99]  	20	2 
+------
+The gap is between 2 and 98.
+Lengths: 1 1 5 5 1 1.
+For 48 = 5*d/2-d1-d2-d3 you get 1 in char 0.
+1*y^2*z^8
+
+For 24 = 3*d/2-d1-d2-d3 you get 5 in char 0.
+1*x^5*y^1*z^1
+1*x^3*z^3
+1*x^1*y^4*z^1
+1*y^6
+1*y^1*z^4
+
+For 0 = d/2-d1-d2-d3 you get 1 in char 0.
+1
+
+Extra powers of p used 0.
+The invariant extra is equal to 10.
+Start computing 3^3 Delta^1 (x1x2x3)^2... Done.
+Start computing 3^4 Delta^2 (x1x2x3)^2... Done.
+Start computing 3^5 Delta^3 (x1x2x3)^2... Done.
+Start computing 3^6 Delta^4 (x1x2x3)^2... Done.
+Start computing 3^7 Delta^5 (x1x2x3)^2... Done.
+Start computing 3^8 Delta^6 (x1x2x3)^2... Done.
+Start computing 3^9 Delta^7 (x1x2x3)^2... Done.
+Start computing 3^10 Delta^8 (x1x2x3)^2... Done.
+Start computing 3^11 Delta^9 (x1x2x3)^2... Done.
+Start computing 3^12 Delta^10 (x1x2x3)^2... Done.
+Start computing 3^13 Delta^11 (x1x2x3)^2... Done.
+Start computing 3^14 Delta^12 (x1x2x3)^2... Done.
+Start computing 3^15 Delta^13 (x1x2x3)^2... Done.
+Start computing 3^16 Delta^14 (x1x2x3)^2... Done.
+Start computing 3^17 Delta^15 (x1x2x3)^2... Done.
+Start computing 3^18 Delta^16 (x1x2x3)^2... Done.
+Start computing 3^19 Delta^17 (x1x2x3)^2... Done.
+Start computing 3^20 Delta^18 (x1x2x3)^2... Done.
+Start computing 3^21 Delta^19 (x1x2x3)^2... Done.
+Start computing 3^22 Delta^20 (x1x2x3)^2... Done.
+Start computing aa.
+1 2 3 4 5 6 7 
+*/
+A = \
+[9827549347278438660821050082584532354908695,0,0,0,10058370142211018860763487001780682120410893,8893241094295084508136704190488991758209746,16715618688195103044529166486138018120800467;\
+0,5590536509856245765970540572130136168470789,5225531972425582980808271911742926394690826,8046836299837126704568055140112153135075892,0,0,0;\
+0,4633363375651501658189260390339497229898547,6449673107122487380851720134515042232901393,2262805369504221740045917865049521902973709,0,0,0;\
+0,6063876597628340438259914263042199133822567,5112250673535951802159127500767892327926786,3255918598264035836818507921273302371839197,0,0,0;\
+610933503118205897304707104802463111013779,0,0,0,954729048432524809755399551363470470010218,15038498944378875651809437016490863062510704,159189028936020127287534679781470097573493;\
+16011696886459930955749625001262353239944490,0,0,0,12633580606152347295676279770091838812791156,6491510993401596425041739075116143266892948,6065613266998325763103960915012522477767363;\
+14627537033695157570964858808249868899711587,0,0,0,4075532106219621894898500846761833760981259,1858231565558969892471001893018505315722183,19192603411978330081515029432107421269503996]
+/* 
+This matrix times 3^(-1) should be the matrix of frobenius.
+*/ 
+B = 3^(-1) * A; 
+/* Freed 36 lists. */
+The sign is: -1
+The characteristic polynomial is: x^7 + 7*x^6 + 33*x^5 + 135*x^4 + 405*x^3 + 891*x^2 + 1701*x + 2187
+Its Newton polygon is: [2, 1, 1, 1, 1, 1, 0]
+Its factorization is: [x + 3, 1; x^2 + 9, 1; x^4 + 4*x^3 + 12*x^2 + 36*x + 81, 1]
+The valuation of f-g is: 17
+The valuation of subst(g,x,A) is: 16

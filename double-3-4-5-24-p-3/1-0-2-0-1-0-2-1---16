@@ -1,0 +1,91 @@
+/* Comments begin... 
+
+Please input coefficients below.
+Coefficient of   x^8                     = Coefficient of   x^5 * y^1 * z^1         = Coefficient of   x^4 * y^3               = Coefficient of   x^3 * z^3               = Coefficient of   x^2 * y^2 * z^2         = Coefficient of   x^1 * y^4 * z^1         = Coefficient of   y^6                     = Coefficient of   y^1 * z^4               = 
+Here is the polynomial we're using this time:
+
+1*x^8 + 2*x^4*y^3 + 1*x^2*y^2*z^2 + 2*y^6 + 1*y^1*z^4
+
+Allocate G_len 20 elements and old = 0.
+Allocate M_len = 400 elements.
+Allocate G_len 40 elements and old = 20.
+The final length of G is 19
+[2, 2, 1, 0]  	19	2 
+[7, 0, 0, 0]  	21	3  <--- 1
+[4, 3, 0, 0]  	24	3 
+[2, 1, 3, 0]  	25	3 
+[5, 1, 2, 0]  	29	4 
+[0, 6, 1, 0]  	29	2 
+[3, 6, 0, 0]  	33	3 
+[3, 0, 5, 0]  	34	2 
+[5, 0, 4, 0]  	35	3 
+[0, 5, 3, 0]  	35	2 
+[2, 0, 6, 0]  	36	3 
+[1, 0, 7, 0]  	38	1 
+[1, 9, 0, 0]  	39	2 
+[0, 10, 0, 0]  	40	2  <--- 2
+[0, 4, 5, 0]  	41	1 
+[0, 0, 9, 0]  	45	1  <--- 3
+[0, 3, 7, 0]  	47	1 
+[4, 2, 0, 1]  	20	4 
+[2, 1, 2, 99]  	20	2 
+------
+The gap is between 2 and 98.
+Lengths: 1 1 5 5 1 1.
+For 48 = 5*d/2-d1-d2-d3 you get 1 in char 0.
+1*y^2*z^8
+
+For 24 = 3*d/2-d1-d2-d3 you get 5 in char 0.
+1*x^5*y^1*z^1
+1*x^3*z^3
+1*x^1*y^4*z^1
+1*y^6
+1*y^1*z^4
+
+For 0 = d/2-d1-d2-d3 you get 1 in char 0.
+1
+
+Extra powers of p used 0.
+The invariant extra is equal to 10.
+Start computing 3^3 Delta^1 (x1x2x3)^2... Done.
+Start computing 3^4 Delta^2 (x1x2x3)^2... Done.
+Start computing 3^5 Delta^3 (x1x2x3)^2... Done.
+Start computing 3^6 Delta^4 (x1x2x3)^2... Done.
+Start computing 3^7 Delta^5 (x1x2x3)^2... Done.
+Start computing 3^8 Delta^6 (x1x2x3)^2... Done.
+Start computing 3^9 Delta^7 (x1x2x3)^2... Done.
+Start computing 3^10 Delta^8 (x1x2x3)^2... Done.
+Start computing 3^11 Delta^9 (x1x2x3)^2... Done.
+Start computing 3^12 Delta^10 (x1x2x3)^2... Done.
+Start computing 3^13 Delta^11 (x1x2x3)^2... Done.
+Start computing 3^14 Delta^12 (x1x2x3)^2... Done.
+Start computing 3^15 Delta^13 (x1x2x3)^2... Done.
+Start computing 3^16 Delta^14 (x1x2x3)^2... Done.
+Start computing 3^17 Delta^15 (x1x2x3)^2... Done.
+Start computing 3^18 Delta^16 (x1x2x3)^2... Done.
+Start computing 3^19 Delta^17 (x1x2x3)^2... Done.
+Start computing 3^20 Delta^18 (x1x2x3)^2... Done.
+Start computing 3^21 Delta^19 (x1x2x3)^2... Done.
+Start computing 3^22 Delta^20 (x1x2x3)^2... Done.
+Start computing aa.
+1 2 3 4 5 6 7 
+*/
+A = \
+[2526915491286820439403963841585286788537203,0,0,0,7201526260962305466903663111805004300252445,17494043333458893991781830760234239934583213,3556587497689118662508786980525688367356562;\
+0,1441848941740679443475474733267383410203180,1449608133962913312769978227415185616133859,7796579022072002834555960700433573665838704,0,0,0;\
+0,3124826462648687164825315146973149294582741,5100008419167831901483682390936105688421407,5387631832152908904871233012022671197556450,0,0,0;\
+0,6314373028864901923895368881506472313290147,4536584698489922770655611529654281176646158,5996315269334851521068177074343034540966276,0,0,0;\
+13704022714505730791467529799162233090982618,0,0,0,2905994459707234078477878968552870472723798,3075513052324593326805928567153788481961667,2416023281632471908006497268588194224028916;\
+11949390244383439251427224475274821889569285,0,0,0,22109566525276877929590169585080947452770078,14754366371654215140096105318217292798010870,23390190512784096670977813056562678295786647;\
+4256191155771646569731412523634130186332202,0,0,0,5007544593461107678480127246845219860383277,8231725274039015745114336770178305712057054,3554217729307394226750361129770303440002323]
+/* 
+This matrix times 3^(-1) should be the matrix of frobenius.
+*/ 
+B = 3^(-1) * A; 
+/* Freed 34 lists. */
+The sign is: 1
+The characteristic polynomial is: x^7 - 7*x^6 + 33*x^5 - 135*x^4 + 405*x^3 - 891*x^2 + 1701*x - 2187
+Its Newton polygon is: [2, 1, 1, 1, 1, 1, 0]
+Its factorization is: [x - 3, 1; x^2 + 9, 1; x^4 - 4*x^3 + 12*x^2 - 36*x + 81, 1]
+The valuation of f-g is: 18
+The valuation of subst(g,x,A) is: 17

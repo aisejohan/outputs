@@ -1,0 +1,64 @@
+/* Comments begin... 
+Coefficient of   x^13 * y^1               = 5
+Coefficient of   x^6 * y^2 * z^4         = 0
+Coefficient of   x^4 * y^5 * z^3         = 0
+Coefficient of   x^2 * y^8 * z^2         = 0
+Coefficient of   x^1 * z^9               = 1
+Coefficient of   y^11 * z^1               = 2
+
+Here is the polynomial we're using this time:
+
+5*x^13*y^1 + 1*x^1*z^9 + 2*y^11*z^1
+
+Allocate G_len 20 elements and old = 0.
+Allocate M_len = 400 elements.
+The final length of G is 8
+[1, 0, 8, 0]  	165	2 
+[13, 0, 0, 0]  	169	2  <--- 1
+[12, 1, 0, 0]  	171	2 
+[0, 11, 1, 0]  	184	1 
+[0, 10, 9, 0]  	321	1 
+[11, 12, 0, 0]  	323	2 
+[0, 22, 0, 0]  	330	1  <--- 2
+[0, 0, 18, 0]  	342	1  <--- 3
+------
+The gap is between 1 and 49.
+Lengths: 2 2 3 3 2 2.
+For 413 = 5*d/2-d1-d2-d3 you get 2 in char 0.
+1*x^10*y^10*z^7
+1*y^6*z^17
+
+For 229 = 3*d/2-d1-d2-d3 you get 3 in char 0.
+1*x^8*y^2*z^5
+1*x^6*y^5*z^4
+1*x^4*y^8*z^3
+
+For 45 = d/2-d1-d2-d3 you get 2 in char 0.
+1*x^2*z^1
+1*y^3
+
+Extra powers of p used 0.
+The invariant extra is equal to 1.
+Start computing 11^3 Delta^1 (x1x2x3)^10... Done.
+Start computing 11^4 Delta^2 (x1x2x3)^10... Done.
+Start computing 11^5 Delta^3 (x1x2x3)^10... Done.
+Start computing 11^6 Delta^4 (x1x2x3)^10... Done.
+Start computing 11^7 Delta^5 (x1x2x3)^10... Done.
+Start computing 11^8 Delta^6 (x1x2x3)^10... Done.
+Start computing 11^9 Delta^7 (x1x2x3)^10... Done.
+Start computing aa.
+1 2 3 4 5 6 7 
+*/
+A = \
+[0,0,0,0,0,0,378578458340031522080814614907566901055551007238671;\
+0,0,0,0,591404869976178343622549553303003295648118060813607,0,0;\
+301874809349359390197644398843667365164803387523370,0,0,0,0,0,0;\
+0,0,0,866730032020177514362314830174779553283898403092630,0,0,0;\
+0,0,0,0,0,491239374329096925269052671517270183699678209000284,0;\
+0,20969223957907528808123230333653137617385095051433,0,0,0,0,0;\
+0,0,373430670679724092902989354744106689695550369632106,0,0,0,0]
+/* 
+This should be the matrix of frobenius!
+*/ 
+B = A; 
+/* Freed 16 lists. */
