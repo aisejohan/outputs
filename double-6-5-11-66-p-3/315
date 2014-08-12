@@ -1,0 +1,162 @@
+/* Comments begin... 
+Coefficient of   x^11                     = 1
+Coefficient of   x^6 * y^6               = 1
+Coefficient of   x^5 * y^5 * z^1         = 1
+Coefficient of   x^4 * y^4 * z^2         = 1
+Coefficient of   x^3 * y^3 * z^3         = 1
+Coefficient of   x^2 * y^2 * z^4         = 0
+Coefficient of   x^1 * y^12               = 0
+Coefficient of   x^1 * y^1 * z^5         = 0
+Coefficient of   y^11 * z^1               = -1
+Coefficient of   z^6                     = -1
+
+Here is the polynomial we're using this time:
+
+1*x^11 + 1*x^6*y^6 + 1*x^5*y^5*z^1 + 1*x^4*y^4*z^2 + 1*x^3*y^3*z^3 + -1*y^11*z^1 + -1*z^6
+
+Allocate G_len 20 elements and old = 0.
+Allocate M_len = 400 elements.
+Allocate G_len 40 elements and old = 20.
+Allocate M_len = 800 elements.
+Allocate G_len 80 elements and old = 40.
+Allocate M_len = 1600 elements.
+Allocate M_len = 3200 elements.
+Allocate G_len 160 elements and old = 80.
+Allocate M_len = 6400 elements.
+Not smooth!
+Coefficient of   x^11                     = 1
+Coefficient of   x^6 * y^6               = -1
+Coefficient of   x^5 * y^5 * z^1         = -1
+Coefficient of   x^4 * y^4 * z^2         = 0
+Coefficient of   x^3 * y^3 * z^3         = 0
+Coefficient of   x^2 * y^2 * z^4         = 0
+Coefficient of   x^1 * y^12               = -1
+Coefficient of   x^1 * y^1 * z^5         = 0
+Coefficient of   y^11 * z^1               = 1
+Coefficient of   z^6                     = -1
+
+Here is the polynomial we're using this time:
+
+1*x^11 + -1*x^6*y^6 + -1*x^5*y^5*z^1 + -1*x^1*y^12 + 1*y^11*z^1 + -1*z^6
+
+The final length of G is 87
+[5, 5, 0, 0]  	55	3 
+[10, 0, 0, 0]  	60	4  <--- 1
+[5, 4, 1, 0]  	61	4 
+[4, 9, 2, 0]  	91	4 
+[4, 1, 6, 0]  	95	5 
+[5, 0, 6, 0]  	96	5 
+[4, 0, 7, 0]  	101	4 
+[4, 14, 1, 0]  	105	5 
+[3, 13, 2, 0]  	105	6 
+[3, 11, 3, 0]  	106	5 
+[3, 4, 7, 0]  	115	4 
+[2, 14, 3, 0]  	115	5 
+[1, 22, 0, 0]  	116	4 
+[2, 4, 8, 0]  	120	4 
+[1, 14, 4, 0]  	120	5 
+[3, 21, 0, 0]  	123	4 
+[2, 20, 1, 0]  	123	4 
+[1, 19, 2, 0]  	123	3 
+[3, 19, 1, 0]  	124	6 
+[2, 18, 2, 0]  	124	4 
+[1, 6, 8, 0]  	124	3 
+[1, 4, 9, 0]  	125	4 
+[3, 9, 6, 0]  	129	2 
+[2, 8, 7, 0]  	129	2 
+[1, 18, 3, 0]  	129	2 
+[0, 17, 4, 0]  	129	2 
+[0, 26, 0, 0]  	130	2  <--- 2
+[0, 15, 5, 0]  	130	2 
+[0, 24, 1, 0]  	131	3 
+[2, 0, 11, 0]  	133	4 
+[0, 5, 10, 0]  	135	1 
+[0, 14, 6, 0]  	136	2 
+[1, 2, 11, 0]  	137	3 
+[0, 23, 2, 0]  	137	3 
+[1, 11, 7, 0]  	138	4 
+[0, 4, 11, 0]  	141	1 
+[0, 13, 7, 0]  	142	2 
+[0, 3, 12, 0]  	147	1 
+[0, 12, 8, 0]  	148	2 
+[1, 0, 13, 0]  	149	2 
+[0, 2, 13, 0]  	153	1 
+[0, 11, 9, 0]  	154	2 
+[0, 1, 14, 0]  	159	1 
+[0, 0, 15, 0]  	165	1  <--- 3
+[1, 12, 0, 1]  	66	4 
+[5, 0, 5, 1]  	85	4 
+[4, 11, 1, 1]  	90	4 
+[2, 6, 5, 1]  	97	5 
+[3, 2, 7, 1]  	105	7 
+[3, 1, 8, 1]  	111	6 
+[2, 3, 8, 1]  	115	6 
+[1, 11, 5, 1]  	116	4 
+[1, 3, 9, 1]  	120	4 
+[1, 1, 10, 1]  	121	4 
+[1, 8, 7, 1]  	123	3 
+[0, 25, 0, 1]  	125	3 
+[3, 0, 10, 1]  	128	5 
+[1, 0, 12, 1]  	138	3 
+[0, 22, 3, 2]  	143	3 
+[2, 11, 4, 3]  	111	6 
+[3, 0, 9, 3]  	117	5 
+[2, 0, 10, 3]  	122	5 
+[0, 16, 4, 45]  	124	2 
+[0, 11, 8, 45]  	143	2 
+[1, 9, 6, 46]  	117	3 
+[1, 5, 8, 46]  	119	3 
+[0, 15, 4, 46]  	119	2 
+[1, 5, 7, 47]  	108	3 
+[0, 15, 3, 47]  	108	2 
+[1, 10, 5, 47]  	111	3 
+[1, 4, 8, 47]  	114	3 
+[0, 22, 2, 47]  	132	3 
+[4, 0, 6, 48]  	90	3 
+[3, 11, 2, 48]  	95	3 
+[1, 5, 6, 48]  	97	3 
+[0, 15, 2, 48]  	97	2 
+[3, 1, 7, 48]  	100	4 
+[1, 4, 7, 48]  	103	3 
+[0, 22, 1, 48]  	121	2 
+[1, 0, 11, 48]  	127	2 
+[0, 11, 7, 48]  	132	2 
+[0, 11, 1, 49]  	66	2 
+[1, 1, 6, 49]  	77	3 
+[4, 10, 1, 49]  	85	2 
+[1, 6, 5, 49]  	91	3 
+[2, 0, 9, 49]  	111	4 
+[1, 0, 10, 49]  	116	3 
+------
+The gap is between 4 and 44.
+Lengths: 2 2 6 8 2 6.
+For 143 = 5*d/2-d1-d2-d3 you get 2 in char 0.
+1*y^11*z^8
+1*z^13
+
+For 77 = 3*d/2-d1-d2-d3 you get 6 in char 0.
+1*x^4*y^4*z^3
+1*x^3*y^3*z^4
+1*x^2*y^2*z^5
+1*x^1*y^1*z^6
+1*y^11*z^2
+1*z^7
+
+For 11 = d/2-d1-d2-d3 you get 2 in char 0.
+1*x^1*y^1
+1*z^1
+
+Extra powers of p used 7.
+The invariant extra is equal to 5.
+Start computing 3^3 Delta^1 (x1x2x3)^2... Done.
+Start computing 3^4 Delta^2 (x1x2x3)^2... Done.
+Start computing 3^5 Delta^3 (x1x2x3)^2... Done.
+Start computing 3^6 Delta^4 (x1x2x3)^2... Done.
+Start computing 3^7 Delta^5 (x1x2x3)^2... Done.
+Start computing 3^8 Delta^6 (x1x2x3)^2... Done.
+Start computing 3^9 Delta^7 (x1x2x3)^2... Done.
+Start computing 3^10 Delta^8 (x1x2x3)^2... Done.
+Start computing 3^11 Delta^9 (x1x2x3)^2... Done.
+Start computing 3^12 Delta^10 (x1x2x3)^2... Done.
+Start computing aa.
+1 FIXME!

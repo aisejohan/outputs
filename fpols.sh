@@ -1,13 +1,15 @@
 #! /bin/bash
 
-ls double-19-23-31-422-p-11 | while read AAA
+DDD="double-6-5-11-66-p-3"
+
+ls $DDD | while read AAA
 do
 	echo
 	echo $AAA
 	echo
-	grep -q FIXME double-19-23-31-422-p-11/$AAA
+	grep -q FIXME $DDD/$AAA
 	if [ $? == 1 ]
 	then
-		gp -q -f double-19-23-31-422-p-11/$AAA do_it.gp
+		gp -q -f $DDD/$AAA do_it.gp
 	fi
 done

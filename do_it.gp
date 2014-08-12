@@ -83,14 +83,15 @@ findweil(f,p,initial) =
 do_it(A)=
 {
 	local(p,lijst,m,c,l,d,f,g);
+	p = 3;
 	f = charpoly(A);
-	print("The prime: ",11,".");
-	print("Newton polygon: ",newtonpoly(f,11));
-	g = findweil(f,11);
+	print("The prime: ",p,".");
+	print("Newton polygon: ",newtonpoly(f,p));
+	g = findweil(f,p);
 	if(g,,print("Did not work."); return);
 	print("Frobenius polynomial: ",g);
 	if(polisirreducible(g),print("Factorization: ", [g, 1]),print("Factorization: ",factor(g)));
-	print("Valuation of f - g: ",valuation(f-g,11));
+	print("Valuation of f - g: ",valuation(f-g,p));
 	return;
 }
 
